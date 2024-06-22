@@ -18,17 +18,21 @@
     <section>
       <nav>
         <div class="nav-data">
-          <p>Home</p>
-          <p>Features</p>
-          <p>Pricing</p>
-          <p>Contact</p>
-          <p class="nav-data-special">Sign up</p>
+          <p id="Home" class="toggle">Home</p>
+          <p id="Features" class="toggle">Features</p>
+          <p id="Pricing" class="toggle">Pricing</p>
+          <p id="Contact" class="toggle">Contact</p>
+          <p class="nav-data-special" id="Sign" class="toggle">Sign up</p>
         </div>
       </nav>
       <!--  -->
       <div class="container">
         <div class="first">
           <div id="curve_chart" class="chat"></div>
+          <!--  -->
+          <div class="thisis">
+            <h1 id="thish1">This is Features</h1>
+          </div>
         </div>
         <!--  -->
         <div class="second">
@@ -56,8 +60,19 @@
       <div class="forload">
         <div class="load1">
           <label>min</label>
-          <input type="range" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            id="inputv"
+            step="any"
+            value="10"
+          />
           <label>max</label>
+        </div>
+        <div class="load2">
+          <!-- <span id="valueone">cost</span> -->
+          <span id="valuetwo">1</span>
         </div>
         <!-- -->
       </div>
